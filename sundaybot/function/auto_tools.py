@@ -1,10 +1,10 @@
-# Fully Rewritten By @DevsExpo
+
 import asyncio
 import time
 import random
 from telethon.tl import functions
-from fridaybot.Configs import Config
-from fridaybot import bot
+from sundaybot.Configs import Config
+from sundaybot import bot
 import pytz
 import asyncio
 import os
