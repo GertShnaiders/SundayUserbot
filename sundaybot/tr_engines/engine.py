@@ -1,6 +1,6 @@
 import os
 from json import loads, JSONDecodeError
-from fridaybot.Configs import Config
+from sundaybot.Configs import Config
 from googletrans import LANGUAGES
 from google_trans_new import google_translator
 import logging
