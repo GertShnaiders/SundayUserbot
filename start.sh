@@ -4,6 +4,6 @@ echo """
  ) _)  )   / )(  ) D (/    \ )  /
 (__)  (__\_)(__)(____/\_/\_/(__/
 
-(C) @DEVSEXPO
+(C) @SundayDevs
 """
-python3 -m fridaybot
+python3 -m sundaybot
