@@ -23,7 +23,7 @@ if os.path.exists('local.env'):
     load_dotenv('local.env')
 
 Lastupdate = time.time()
-sedprint = logging.getLogger("WARNING")oi
+sedprint = logging.getLogger("WARNING")
 
 
 basicConfig(
