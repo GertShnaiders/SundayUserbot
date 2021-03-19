@@ -1,17 +1,17 @@
 {
-  "name": "Friday-Userbot",
-  "description": "A Userbot Based On Telethon By Friday Devs",
+  "name": "Sunday-Userbot",
+  "description": "A Userbot Based On Telethon By Sunday Devs",
   "logo": "https://telegra.ph/file/b4e1e36c6b1fcb32dd997.jpg",
   "keywords": [
     "telegram",
-    "fridaybot",
+    "sundaybot",
     "plugin",
-    "telegram-fridaybot",
+    "telegram-sundaybot",
     "productivity"
   ],
-  "repository": "https://github.com/starkgang/FridayUserbot",
+  "repository": "https://github.com/GertShnaiders/SundayUserbot",
   "website": "starkgang.ml",
-  "success_url": "t.me/FridayOT",
+  "success_url": "t.me/SundayOT",
   "stack": "container",
   "env": {
     "ENV": {
