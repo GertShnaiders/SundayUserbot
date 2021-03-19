@@ -5,7 +5,7 @@ import sys
 import time
 from distutils.util import strtobool as sb
 from logging import DEBUG, INFO, basicConfig, getLogger
-from fridaybot.clients import bot, client2, client3
+from sundaybot.clients import bot, client2, client3
 import pylast
 import wget
 from nospamplus.connect import Connect
@@ -17,13 +17,13 @@ from telegraph import Telegraph, exceptions, upload_file
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 
-from fridaybot.Configs import Config
+from sundaybot.Configs import Config
 
 if os.path.exists('local.env'):
     load_dotenv('local.env')
 
 Lastupdate = time.time()
-sedprint = logging.getLogger("WARNING")
+sedprint = logging.getLogger("WARNING")oi
 
 
 basicConfig(
@@ -118,5 +118,5 @@ try:
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
 except:
     pass
-friday_version = "7.0"
-friday_name = "FridayUserBot V7.0"
+sunday_version = "7.0"
+sunday_name = "SundayUserBot V7.0"
