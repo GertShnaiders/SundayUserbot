@@ -253,7 +253,7 @@ class Config(object):
     ANTISPAM_FEATURE = os.environ.get("ANTISPAM_FEATURE", "ENABLE")
     ASSISTANT_LOG = int(os.environ.get("ASSISTANT_LOG", False))
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/Starkgang/FridayUserbot"
+        "UPSTREAM_REPO", "https://github.com/GertShnaiders/SundayUserbot"
     )
     ALIVE_IMAGE = os.environ.get(
         "ALIVE_IMAGE", "https://telegra.ph/file/22535f8051a58af113586.jpg"
