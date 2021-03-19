@@ -1,8 +1,4 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.c (the "License");
-# you may not use this file except in compliance with the License.
-#
+
 """ Userbot module for managing events.
  One of the main components of the fridaybot. """
 
@@ -15,7 +11,7 @@ from traceback import format_exc
 
 from telethon import events
 
-from fridaybot import LOGSPAMMER, PRIVATE_GROUP_ID, bot, client2 as starkclient, client3 as warnerclient
+from sundaybot import LOGSPAMMER, PRIVATE_GROUP_ID, bot, client2 as starkclient, client3 as warnerclient
 
 
 def register(**args):
