@@ -1,8 +1,8 @@
 from telethon.events import ChatAction
 from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
-from fridaybot import sclient
-from fridaybot.Configs import Config
+from sundaybot import sclient
+from sundaybot.Configs import Config
 
 
 """Bans Spammers/Scammer At time Of Arrival 
