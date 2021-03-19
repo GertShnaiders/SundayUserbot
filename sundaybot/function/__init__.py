@@ -1,15 +1,4 @@
-#    Copyright (C) Midhun KM 2020-2021
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 import random
 import requests
 import string
@@ -27,9 +16,9 @@ import shutil
 import os
 import argparse
 import wget
-from fridaybot import bot as borg
+from sundaybot import bot as borg
 import lottie
-from fridaybot.utils import load_module
+from sundaybot.utils import load_module
 from telethon.tl.types import DocumentAttributeAudio
 from PIL import Image
 from youtube_dl import YoutubeDL
@@ -48,7 +37,7 @@ from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 headers = {"UserAgent": UserAgent().random}
 import asyncio
-from fridaybot.function.FastTelethon import download_file
+from sundaybot.function.FastTelethon import download_file
 import json
 import math
 import os
@@ -71,15 +60,15 @@ from telethon.tl.types import MessageMediaPhoto
 from typing import Union
 SIZE_UNITS = ["B", "KB", "MB", "GB", "TB", "PB"]
 BASE_URL = "https://isubtitles.org"
-from fridaybot.Configs import Config
+from sundaybot.Configs import Config
 import zipfile
 import os
 import aiohttp
-from fridaybot.function.FastTelethon import upload_file
+from sundaybot.function.FastTelethon import upload_file
 import numpy as np
 import cv2
 sedpath = Config.TMP_DOWNLOAD_DIRECTORY
-from fridaybot import logging
+from sundaybot import logging
 
 logger = logging.getLogger("[--WARNING--]")
 if not os.path.isdir(sedpath):
@@ -692,9 +681,9 @@ async def _deezer_dl(word, event, tgbot):
 **Duration :** {datto.get('duration')} Seconds
 **Artist :** {mello}
 
-Music Downloaded And Uploaded By Friday Userbot
+Music Downloaded And Uploaded By Sunday Userbot
 
-Get Your Friday From @FridayOT"""
+"""
     await event.edit("Song Downloaded.  Waiting To Upload. 🥳🤗")
     c_time = time.time()
     uploaded_file = await upload_file(
