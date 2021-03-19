@@ -1,6 +1,6 @@
-from fridaybot.Configs import Config
-from fridaybot.utils import friday_on_cmd
-from fridaybot.Configs import Config
+from sundaybot.Configs import Config
+from sundaybot.utils import sunday_on_cmd
+from sundaybot.Configs import Config
 issudousing = Config.SUDO_USERS
 islogokay = Config.PRIVATE_GROUP_ID
 isdbfine = Config.DB_URI
@@ -9,7 +9,7 @@ gdriveisshit = Config.AUTH_TOKEN_DATA
 wttrapi = Config.OPEN_WEATHER_MAP_APPID
 rmbg = Config.REM_BG_API_KEY
 hmmok = Config.LYDIA_API
-currentversion = "6.5"
+currentversion = "7.0"
 if issudousing:
     amiusingsudo = "Active ✅"
 else:
@@ -51,7 +51,7 @@ else:
     dbstats = "Not Fine ❌"
 
 inlinestats = (
-    f"✘ SHOWING FRIDAY STATS ✘\n"
+    f"✘ SHOWING 🇨🇦 SUNDAY 🇨🇦 STATS ✘\n"
     f"VERSION = {currentversion} \n"
     f"DATABASE = {dbstats} \n"
     f"SUDO = {amiusingsudo} \n"
