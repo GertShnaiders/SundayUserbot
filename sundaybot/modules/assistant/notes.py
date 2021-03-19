@@ -1,8 +1,8 @@
 from telethon import events, utils
 from telethon.tl import types
 
-from fridaybot.Configs import Config
-from fridaybot.modules.sql_helper.snips_sql import (
+from sundaybot.Configs import Config
+from sundaybot.modules.sql_helper.snips_sql import (
     add_snip,
     get_all_snips,
     get_snips,
