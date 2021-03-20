@@ -78,4 +78,4 @@ RUN chmod +x /usr/local/bin/*
 # Install All Req. in requirements File
 RUN pip3 install -r requirements.txt
 # Run start.sh file, (Run Bot) 
-CMD ["bash","start.sh"]
+CMD ["bash","sundaybot"]
