@@ -78,7 +78,7 @@ def multiple_client():
         chsaiujwal = True
     return warnerstark, chsaiujwal    
 
-async def get_other_plugins(Config, client_s, fridaydevs):
+async def get_other_plugins(Config, client_s, sundaydevs):
     try:
         a_plugins = await client_s.get_messages(
             entity=Config.LOAD_OTHER_PLUGINS_CHNNL,
@@ -95,7 +95,7 @@ async def get_other_plugins(Config, client_s, fridaydevs):
         if os.path.exists(os.path.join(pathh, hmm)):
             pass
         else:
-            await client_s.download_media(meisnub.media, "fridaybot/modules/")
+            await client_s.download_media(meisnub.media, "sundaybot/modules/")
     sundaydevs.info("Extra Plugins Downloaded.")
 
 if len(argv) not in (1, 3, 4):
