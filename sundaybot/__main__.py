@@ -113,7 +113,7 @@ else:
         failed2, failed3 = multiple_client()
 
 if Config.LOAD_OTHER_PLUGINS:
-        bot.loop.run_until_complete(get_other_plugins(Config, bot, fridaydevs))
+        bot.loop.run_until_complete(get_other_plugins(Config, bot, sundaydevs))
         
 import glob
 
