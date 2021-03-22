@@ -91,7 +91,7 @@ async def get_other_plugins(Config, client_s, fridaydevs):
         return
     for meisnub in a_plugins:
         hmm = meisnub.media.document.attributes[-1].file_name
-        pathh = "fridaybot/modules/"
+        pathh = "sundaybot/modules/"
         if os.path.exists(os.path.join(pathh, hmm)):
             pass
         else:
