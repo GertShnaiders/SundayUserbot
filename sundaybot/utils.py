@@ -853,3 +853,4 @@ def start_assistant(shortname):
         spec.loader.exec_module(mod)
         sys.modules["sundaybot.modules.assistant" + shortname] = mod
         sedprint.info("Assistant Has imported " + shortname)
+admin_cmd = sunday_on_cmd
