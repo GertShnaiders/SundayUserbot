@@ -106,13 +106,13 @@ def sunday_on_command(**args):
                         await check.client.send_file(
                                 Config.PRIVATE_GROUP_ID,
                                 "error.log",
-                                caption="Error LoG, Please Forward To @FridayChat!, If You Think Its A Error.",
+                                caption="Error LoG, Please Forward To @Sunday_Userbot_Support!, If You Think Its A Error.",
                             )
                     except:
                         await check.client.send_file(
                                 bot.uid,
                                 "error.log",
-                                caption="Error LoG, Please Forward To @FridayChat!, If You Think Its A Error.",
+                                caption="Error LoG, Please Forward To @Sunday_Userbot_Support!, If You Think Its A Error.",
                             )
                     os.remove("error.log")
         bot.add_event_handler(wrapper, events.NewMessage(**args))
@@ -378,7 +378,7 @@ def admin_cmd(pattern=None, **args):
     # check if the plugin should listen for outgoing 'messages'
     return events.NewMessage(**args)
 
-def friday_on_cmd(pattern=None, **args):
+def sunday_on_cmd(pattern=None, **args):
     args["func"] = lambda e: e.via_bot_id is None
 
     stack = inspect.stack()
@@ -420,7 +420,7 @@ def friday_on_cmd(pattern=None, **args):
 
 
 """ Userbot module for managing events.
- One of the main components of the fridaybot. """
+ One of the main components of the sundaybot. """
 
 import asyncio
 import datetime
@@ -505,7 +505,7 @@ def errors_handler(func):
             ftext += "\nyou may not report this error if you've"
             ftext += "\nany confidential data here, no one will see your data\n\n"
 
-            ftext += "--------BEGIN FRIDAY USERBOT TRACEBACK LOG--------"
+            ftext += "--------BEGIN SUNDAY USERBOT TRACEBACK LOG--------"
             ftext += "\nDate: " + date
             ftext += "\nGroup ID: " + str(errors.chat_id)
             ftext += "\nSender ID: " + str(errors.sender_id)
