@@ -25,9 +25,8 @@ bothandler = Config.BOT_HANDLER
 sudo_users = list(Config.SUDO_USERS) if list(Config.SUDO_USERS) else ''
 from datetime import datetime
 
-admin_cmd = sunday_on_cmd
 
-def sunday_on_command(**args):
+def sunday_on_cmd(**args):
     args["func"] = lambda e: e.via_bot_id is None
     stack = inspect.stack()
     previous_stack_frame = stack[1]
