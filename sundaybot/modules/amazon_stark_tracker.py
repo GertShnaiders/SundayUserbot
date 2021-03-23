@@ -1,6 +1,6 @@
 
 
-
+from sundaybot.utils import admin_cmd as sunday_on_cmd
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from sundaybot.modules.sql_helper.amazon_tracker_sql import add_new_tracker, is_tracker_in_db, rm_tracker, get_tracker_info, rm_tracker, get_all_tracker, get_all_urls
 import requests
