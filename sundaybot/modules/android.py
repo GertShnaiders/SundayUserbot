@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from requests import get
 
 from .. import CMD_HELP
-from ..utils import edit_or_reply, sunday_on_cmd, sudo_cmd
+from ..utils import edit_or_reply, admin_cmd as sunday_on_cmd, sudo_cmd
 
 GITHUB = "https://github.com"
 DEVICES_DATA = (
