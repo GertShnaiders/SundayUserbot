@@ -3,7 +3,7 @@
 from sundaybot.modules.sql_helper.auto_post_sql import add_new_post_data_in_db, get_all_post_data, is_post_data_in_db, remove_post_data
 from telethon import events
 
-@bot.on(admin_cmd(pattern="autopost ?(.*)"))
+@bot.on(sunday_on_cmd(pattern="autopost ?(.*)"))
 async def lol(event):
     if (event.is_private or event.is_group):
         await event.edit("`Only Channels Can Use THis Feature.`")
@@ -22,7 +22,7 @@ async def lol(event):
     add_new_post_data_in_db(kk, event.chat_id)
     await event.edit(f"`Added AutoPosting To This Chat From {sed}`")
 
-@bot.on(admin_cmd(pattern="rmautopost ?(.*)"))
+@bot.on(sunday_on_cmnd(pattern="rmautopost ?(.*)"))
 async def lol(event):
     if (event.is_private or event.is_group):
         await event.edit("`Only Channels Can Use THis Feature.`")
