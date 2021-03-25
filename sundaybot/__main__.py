@@ -94,12 +94,7 @@ async def get_other_plugins(Config, client_s, sundaydevs):
         pathh = "sundaybot/modules/"
         if os.path.exists(os.path.join(pathh, hmm)):
             pass
-        else:
-            await client_s.download_media(meisnub.media, "sundaybot/modules/")
-    sundaydevs.info("Extra Plugins Downloaded.")
-
-if len(argv) not in (1, 3, 4):
-    bot.disconnect()
+        
 else:
     bot.tgbot = None
     if Config.TG_BOT_TOKEN_BF_HER is not None:
